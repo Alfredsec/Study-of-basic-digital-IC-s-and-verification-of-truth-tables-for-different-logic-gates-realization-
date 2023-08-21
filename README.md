@@ -1,8 +1,8 @@
-# Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
- AIM:
+# Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization
+## AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
-Equipments Required:
+## Equipments Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 Theory
@@ -49,24 +49,39 @@ Y= A⊕B
 7) Ex-NOR gate
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 
-Y= A⊕B
-
-Procedure
+## Procedure:
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
 If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
-Program:
-/*
-Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
 
-Result:
+## Program:
+```
+Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
+Developed by: Alfred A B
+RegisterNumber:  212222110002
+module Verilog1 (a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor);
+input a,b;
+output yand,yor,ynot,yxor,ynand,ynor,yxnor;
+and(yand,a,b);
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
+```
+## Logic symbol & Truthtable:
+![DE LOGIC GATES](https://github.com/Alfredsec/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/120621608/05d33998-3b05-4e5f-9c26-f7195ca43471)
+
+## RTL realization:
+![RTL VEIWER](https://github.com/Alfredsec/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/120621608/90120839-c6db-4d49-bcf3-3188a46b65c1)
+
+## Output:
+### RTL:
+![OUTPUT](https://github.com/Alfredsec/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/120621608/99a66afa-05a4-4360-8ecd-b730335b0482)
+
+## Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
